@@ -1,0 +1,18 @@
+#tagButton {
+  border-radius: 6px;
+}
+
+.hrUnderTitle {
+  border-width: 3px;
+}
+
+.hrAboveTimeTag {
+  border-width: 2px;
+  width: 300px;
+}
+
+.sectionPageCateg {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
