@@ -1,0 +1,37 @@
+## React project
+web/node_modules
+
+## Spring boot project
+ServerApp/HELP.md
+ServerApp/target/
+ServerApp/!.mvn/wrapper/maven-wrapper.jar
+ServerApp/!**/src/main/**/target/
+ServerApp/!**/src/test/**/target/
+
+### STS ###
+ServerApp/.apt_generated
+ServerApp/.classpath
+ServerApp/.factorypath
+ServerApp/.project
+ServerApp/.settings
+ServerApp/.springBeans
+ServerApp/.sts4-cache
+
+### IntelliJ IDEA ###
+ServerApp/.idea
+ServerApp/*.iws
+ServerApp/*.iml
+ServerApp/*.ipr
+
+### NetBeans ###
+ServerApp//nbproject/private/
+ServerApp//nbbuild/
+ServerApp//dist/
+ServerApp//nbdist/
+ServerApp//.nb-gradle/
+ServerApp/build/
+ServerApp/!**/src/main/**/build/
+ServerApp/!**/src/test/**/build/
+
+### VS Code ###
+ServerApp/.vscode/
