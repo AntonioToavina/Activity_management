@@ -42,7 +42,7 @@ const AddSideBar = ({ children }) => {
       <Sidenav
         color={sidenavColor}
         brand={brand}
-        brandName="M i k o l o"
+        brandName="Event"
         routes={manageRoutes()}
         onMouseEnter={handleOnMouseEnter}
         onMouseLeave={handleOnMouseLeave}

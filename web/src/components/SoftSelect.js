@@ -4,7 +4,6 @@ import { useState } from "react";
 const SoftSelect = ({
   data,
   f_value,
-
   f_item,
   setValue,
   value,
@@ -28,7 +27,7 @@ const SoftSelect = ({
     <FormControl fullWidth>
       <Select
         displayEmpty
-        value={defaultValue === undefined ? selectValue : defaultValue}
+        defaultValue={defaultValue === undefined ? selectValue : defaultValue}
         onChange={(e) => handleClick(e.target.value)}
       >
         <MenuItem value="" sx={{ color: "text.secondary" }}>

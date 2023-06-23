@@ -17,9 +17,7 @@ Coded by www.creative-tim.com
 import PropTypes from "prop-types";
 
 // @mui material components
-import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
 
 // Soft UI Dashboard React components
 import SoftBox from "../../../../SoftBox";
@@ -64,25 +62,6 @@ function MiniStatisticsCard({
               </SoftTypography>
             </SoftBox>
           </Grid>
-          {direction === "right" ? (
-            <Grid item xs={6}>
-              <SoftBox
-                variant="container"
-                bgColor={bgColor === "white" ? icon.color : "white"}
-                color={bgColor === "white" ? "white" : "dark"}
-                width="15rem"
-                height="4rem"
-                marginLeft="auto"
-                borderRadius="md"
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                shadow="md"
-              >
-                {icon.delai}
-              </SoftBox>
-            </Grid>
-          ) : null}
         </Grid>
       </SoftBox>
     </SoftBox>

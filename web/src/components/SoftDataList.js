@@ -1,6 +1,6 @@
 import { Autocomplete, TextField } from "@mui/material";
 
-const SoftDataList = ({ data, setValue, value, fieldData, fieldValue }) => {
+const SoftDataList = ({ data, setValue, value, fieldData, fieldValue,defaultValue }) => {
   const handleValue = (val) => {
     const newValue = data.filter((v) => v[fieldData] === val)[0];
     setValue({ ...value, [fieldValue]: newValue });
@@ -10,6 +10,7 @@ const SoftDataList = ({ data, setValue, value, fieldData, fieldValue }) => {
     <Autocomplete
       disablePortal
       fullWidth
+      defaultValue={defaultValue}
       id="combo-box-demo"
       options={data}
       getOptionLabel={(option) => option[fieldData]}

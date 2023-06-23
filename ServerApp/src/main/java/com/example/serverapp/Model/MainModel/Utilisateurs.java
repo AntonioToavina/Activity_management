@@ -1,18 +1,15 @@
 package com.example.serverapp.Model.MainModel;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "utilisateurs")
-@Getter
-@Setter
+@Data
 public class Utilisateurs {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "pk_utilisateurs_seq_id")
-    @SequenceGenerator(name = "pk_utilisateurs_seq_id", sequenceName = "utilisateurs_seq_id", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String nom;

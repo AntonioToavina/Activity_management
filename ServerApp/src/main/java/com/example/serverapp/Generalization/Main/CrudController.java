@@ -83,6 +83,16 @@ public class CrudController<T, R extends JpaRepository<T, ID>, S extends CrudSer
         return ResponseEntity.ok().headers(headers).contentType(MediaType.APPLICATION_PDF).body(input);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Object> delete(@PathVariable ID id) throws Exception {
+        try {
+            this.service.delete(this.repo, id);
+            return ResponseEntity.status(HttpStatus.OK).body(new ResponseData(" Object supprimé "));
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(new ResponseData(e.getMessage()));
+        }
+    }
+
     @ExceptionHandler(Exception.class)
     public Object handleRequestBodyError(JsonMappingException ex) {
         return new ErrorResponse(ex.getOriginalMessage());

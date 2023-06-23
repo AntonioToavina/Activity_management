@@ -71,4 +71,13 @@ public class CrudService {
             throw new Exception(e.getMessage());
         }
     }
+
+    public <T, ID> void delete(JpaRepository<T, ID> repo, ID id) throws Exception {
+        try {
+            T object = this.findById(repo, id);
+            repo.delete(object);
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
 }

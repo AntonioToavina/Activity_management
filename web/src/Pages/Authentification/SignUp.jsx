@@ -34,13 +34,8 @@ function SignUp() {
             icon: "error",
           });
         else {
-          swal({
-            title: "success",
-            text: "Connexion reussi",
-            icon: "success",
-          });
-          //sessionStorage.setItem("user", JSON.stringify(json.data));
-          //navigate(redirectRouter());
+          sessionStorage.setItem("user", JSON.stringify(json.data));
+          navigate(redirectRouter());
         }
       });
   };

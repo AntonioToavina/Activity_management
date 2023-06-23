@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RequestMapping(value = "/utilisateurs")
 public class Utilisateur_Controller extends CrudController<Utilisateurs, Repo_Utilisateur, Utilisateur_Service, Integer> {
-
     public Utilisateur_Controller(Repo_Utilisateur repoUtilisateur, Repo_DB repo_db) {
         super(new Utilisateurs(), repoUtilisateur, new Utilisateur_Service(new PDF_Service()), repo_db);
     }
